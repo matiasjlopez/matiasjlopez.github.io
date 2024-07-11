@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Mi chiquita.</strong>
+                        <p>
+                            Vos fuiste quien me hizo vivir denuevo y devolvio esa chispa que habia perdido.
+                            Quiero que sepas que te sigo amando como desde el principio.
+                        </p>
+                        <p>
+                            Voy a seguir conquistandote todos los dias porque no quiero perderte.
+                            Me haces muy feliz y me das esa paz y tranquilidad que todos buscan.
+                        </p>
+                        <p>
+                            Gracias, te amo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
